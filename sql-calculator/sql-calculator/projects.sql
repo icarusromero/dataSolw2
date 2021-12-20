@@ -91,5 +91,21 @@ WHERE g.grade >= 90;
 --Result: Congrats, Sarah Developer, you recieved a 100 on Snake Game.
 
 --Problem 2
-
+SELECT CONCAT('Your assignment needs improvement, you recieved a ', grade, ' on ', project_title, '.') 
+FROM grades 
+WHERE grade <= 70;
 --Result: 
+--                                   concat
+-- --------------------------------------------------------------------------
+--  Your assignment needs improvement, you recieved a 10 on News Aggregator.
+--  Your assignment needs improvement, you recieved a 50 on News Aggregator.
+--  Your assignment needs improvement, you recieved a 2 on Snake Game.
+--  Your assignment needs improvement, you recieved a 0 on Snake Game.
+--  Your assignment needs improvement, you recieved a 0 on Snake Game.
+--  Your assignment needs improvement, you recieved a 50 on Snake Game.
+--  Your assignment needs improvement, you recieved a 64 on Snake Game.
+
+--Problem 3
+SELECT CONCAT(LOWER(first_name), '-', LOWER(last_name)) 
+FROM students;
+--Result: jane-hacker, sarah-developer
