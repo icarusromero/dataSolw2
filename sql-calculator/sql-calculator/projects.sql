@@ -83,5 +83,13 @@ AND grade >
 
 --WORKING WITH STRINGS
 --Problem 1
+SELECT CONCAT('Congrats, ', s.first_name, ' ', s.last_name, ', you recieved a ', g.grade, ' on ', g.project_title, '.')
+FROM students s 
+JOIN grades g 
+ON s.github=g.student_github 
+WHERE g.grade >= 90;
+--Result: Congrats, Sarah Developer, you recieved a 100 on Snake Game.
+
+--Problem 2
 
 --Result: 
