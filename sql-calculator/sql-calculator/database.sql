@@ -234,3 +234,15 @@ ALTER TABLE ONLY public.students
 -- PostgreSQL database dump complete
 --
 
+--DISCUSSION QUESTIONS
+
+-- 1) Transactions in SQL are important because they allow for changes that need to happen together, such as the 
+-- tranference of money from person A's account to person B's to be set up so that the database will not update 
+-- unless both actions go through. The syntax for transactions is BEGIN;, SAVEPOINT, ROLLBACK, and COMMIT;.
+
+-- 2) Implicit conversion is when data stored as one data type is converted to another data type automatically by 
+-- the database itself. Explicit conversion is when the data type is converted using conversion functions.
+-- Example:
+-- SELECT *
+-- FROM shopping_list
+-- WHERE prices = INTEGER '437'
