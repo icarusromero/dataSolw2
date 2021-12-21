@@ -1,0 +1,6 @@
+1) Normalization is when you break down data into tables with relationships by way of a series of normal forms. 
+This is done to reduce redundancy and improve the integrity of our data.
+
+2) For 1NF: data should be organized into rows, column values must be of the same kind, each row should have a 
+primary key, and the should not be any repeating groups. For 2NF: 1NF must be complete and no partial dependency on 
+the key. For 3NF: 2NF must be complete and must have no transitive dependencies
